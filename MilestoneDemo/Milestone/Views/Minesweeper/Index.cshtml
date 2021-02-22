@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Minesweeper THE GAME!</h1>
+
+<br />
+<div>
+    @{
+        Html.RenderPartial("~/Views/Shared/_ViewMinesweeperPartial.cshtml");
+    }
+</div>
+
+@ViewBag.theResult
+
